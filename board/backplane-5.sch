@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="8.3.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -10571,10 +10571,10 @@ Source: www.kingbright.com</description>
 <part name="FRAME4" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U12" library="tuetuopay" deviceset="KSZ8081MLX" device=""/>
 <part name="PE15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="PE" device="" value="GND"/>
-<part name="C59" library="tuetuopay" deviceset="C" device="0603" value="1uF"/>
+<part name="C59" library="tuetuopay" deviceset="C" device="0603" value="100n"/>
 <part name="C60" library="tuetuopay" deviceset="C" device="0603" value="22uF"/>
 <part name="PE16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="PE" device="" value="GND"/>
-<part name="C61" library="tuetuopay" deviceset="C" device="0603" value="1uF"/>
+<part name="C61" library="tuetuopay" deviceset="C" device="0603" value="100n"/>
 <part name="C62" library="tuetuopay" deviceset="C" device="0603" value="22uF"/>
 <part name="C63" library="tuetuopay" deviceset="C" device="0603" value="2.2uF"/>
 <part name="C64" library="tuetuopay" deviceset="C" device="0603" value="100nF"/>
@@ -12304,14 +12304,6 @@ Source: www.kingbright.com</description>
 <wire x1="93.98" y1="147.32" x2="93.98" y2="149.86" width="0.1524" layer="91"/>
 <junction x="93.98" y="147.32"/>
 <label x="93.98" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="C61" gate="&gt;NAME" pin="1"/>
-<wire x1="106.68" y1="147.32" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="147.32" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
-<junction x="106.68" y="147.32"/>
-<pinref part="C62" gate="&gt;NAME" pin="1"/>
-<wire x1="114.3" y1="147.32" x2="121.92" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="147.32" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
-<junction x="114.3" y="147.32"/>
 </segment>
 <segment>
 <pinref part="R6" gate="G$1" pin="2"/>
@@ -12578,8 +12570,18 @@ Source: www.kingbright.com</description>
 <net name="2V5" class="0">
 <segment>
 <pinref part="U12" gate="G$1" pin="VDDIO"/>
-<wire x1="88.9" y1="127" x2="88.9" y2="149.86" width="0.1524" layer="91"/>
-<label x="88.9" y="149.86" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="88.9" y1="127" x2="88.9" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="167.64" x2="86.36" y2="167.64" width="0.1524" layer="91"/>
+<label x="86.36" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="C61" gate="&gt;NAME" pin="1"/>
+<pinref part="C62" gate="&gt;NAME" pin="1"/>
+<wire x1="121.92" y1="147.32" x2="121.92" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="147.32" x2="121.92" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="147.32" x2="114.3" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="167.64" x2="114.3" y2="167.64" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="167.64" x2="114.3" y2="147.32" width="0.1524" layer="91"/>
+<junction x="88.9" y="167.64"/>
+<junction x="114.3" y="147.32"/>
 </segment>
 <segment>
 <pinref part="R16" gate="G$1" pin="2"/>
