@@ -2467,6 +2467,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="68.8594" y="24.9682" size="0.762" layer="25" rot="R90"/>
 </element>
 <element name="U13" library="tuetuopay" package="LQFP-100" value="STM32F217-100" x="-138.3792" y="-526.288"/>
+<element name="X3" library="tuetuopay" package="XTAL-2-SMD" value="25MHz" x="-150.7744" y="-531.368"/>
+<element name="C69" library="tuetuopay" package="0603" value="8pF" x="-151.1808" y="-538.0736"/>
+<element name="C70" library="tuetuopay" package="0603" value="8pF" x="-151.1808" y="-541.7312"/>
 </elements>
 <signals>
 <signal name="12V">
@@ -2645,6 +2648,8 @@ design rules under a new name.</description>
 <contactref element="C24" pad="2"/>
 <contactref element="CN1" pad="S@1"/>
 <contactref element="CN1" pad="S@2"/>
+<contactref element="C70" pad="2"/>
+<contactref element="C69" pad="2"/>
 <wire x1="-106.26" y1="-387.35" x2="-106.26" y2="-400.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-106.26" y1="-374.65" x2="-106.26" y2="-387.35" width="0" layer="19" extent="1-1"/>
 <wire x1="-106.26" y1="-364.49" x2="-106.26" y2="-374.65" width="0" layer="19" extent="1-1"/>
@@ -2655,6 +2660,8 @@ design rules under a new name.</description>
 <wire x1="-145.2" y1="-478.79" x2="-106.26" y2="-400.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-145.2" y1="-483.87" x2="-145.2" y2="-478.79" width="0" layer="19" extent="1-1"/>
 <wire x1="-134.62" y1="-509.27" x2="-145.2" y2="-483.87" width="0" layer="19" extent="1-1"/>
+<wire x1="-150.3308" y1="-538.0736" x2="-134.62" y2="-509.27" width="0" layer="19" extent="1-1"/>
+<wire x1="-150.3308" y1="-541.7312" x2="-150.3308" y2="-538.0736" width="0" layer="19" extent="1-1"/>
 <wire x1="-76.62" y1="-128.27" x2="-84.24" y2="-219.71" width="0" layer="19" extent="1-1"/>
 <wire x1="12.44" y1="5.83" x2="-76.62" y2="-128.27" width="0" layer="19" extent="1-1"/>
 <wire x1="16.59" y1="3.4" x2="12.44" y2="5.83" width="0" layer="19" extent="1-1"/>
@@ -2756,8 +2763,8 @@ design rules under a new name.</description>
 <wire x1="72.8" y1="8.05" x2="63.5" y2="3.5" width="0" layer="19" extent="1-1"/>
 <wire x1="77.5" y1="3.5" x2="72.8" y2="8.05" width="0" layer="19" extent="1-1"/>
 <wire x1="90.4494" y1="36.1442" x2="76.4404" y2="35.3568" width="0" layer="19" extent="1-1"/>
-<wire x1="90.4494" y1="19.939" x2="90.4494" y2="36.1442" width="0" layer="19" extent="1-1"/>
-<wire x1="91.7984" y1="8.3312" x2="90.4494" y2="19.939" width="0" layer="19" extent="1-1"/>
+<wire x1="91.7984" y1="8.3312" x2="77.5" y2="3.5" width="0" layer="19" extent="1-1"/>
+<wire x1="90.4494" y1="19.939" x2="91.7984" y2="8.3312" width="0" layer="19" extent="1-1"/>
 <wire x1="76.5" y1="63" x2="76.4404" y2="39.0144" width="0" layer="19" extent="1-1"/>
 <wire x1="70.95" y1="73.3" x2="76.5" y2="63" width="0" layer="19" extent="1-1"/>
 <wire x1="66" y1="73.5" x2="70.95" y2="73.3" width="0" layer="19" extent="1-1"/>
@@ -4055,6 +4062,20 @@ design rules under a new name.</description>
 <wire x1="80.4672" y1="29.00935" x2="82.42555" y2="27.051" width="0.2032" layer="16"/>
 <wire x1="89.027" y1="27.051" x2="89.5604" y2="26.5176" width="0.2032" layer="16"/>
 <wire x1="82.42555" y1="27.051" x2="89.027" y2="27.051" width="0.2032" layer="16"/>
+</signal>
+<signal name="N$21">
+<contactref element="X3" pad="P$1"/>
+<contactref element="U13" pad="13"/>
+<contactref element="C69" pad="1"/>
+<wire x1="-152.6244" y1="-531.368" x2="-152.0308" y2="-538.0736" width="0" layer="19" extent="1-1"/>
+<wire x1="-138.3792" y1="-534.038" x2="-152.0308" y2="-538.0736" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22">
+<contactref element="C70" pad="1"/>
+<contactref element="U13" pad="12"/>
+<contactref element="X3" pad="P$2"/>
+<wire x1="-148.9244" y1="-531.368" x2="-152.0308" y2="-541.7312" width="0" layer="19" extent="1-1"/>
+<wire x1="-138.8792" y1="-534.038" x2="-148.9244" y2="-531.368" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>

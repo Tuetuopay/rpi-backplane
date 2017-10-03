@@ -1675,7 +1675,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="C" uservalue="yes">
+<deviceset name="C" prefix="C" uservalue="yes">
 <gates>
 <gate name="&gt;NAME" symbol="C-EU" x="0" y="0"/>
 </gates>
@@ -10969,6 +10969,10 @@ Source: www.kingbright.com</description>
 <part name="PE27" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="PE" device="" value="GND"/>
 <part name="FRAME6" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A4L-LOC" device=""/>
 <part name="U13" library="tuetuopay" deviceset="STM32F217-100" device=""/>
+<part name="X3" library="tuetuopay" deviceset="CRYSTAL" device="" value="25MHz"/>
+<part name="C69" library="tuetuopay" deviceset="C" device="0603" value="8pF"/>
+<part name="C70" library="tuetuopay" deviceset="C" device="0603" value="8pF"/>
+<part name="PE28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="PE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13416,10 +13420,50 @@ MII</text>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
 <instance part="U13" gate="G$1" x="109.22" y="91.44"/>
+<instance part="X3" gate="G$1" x="22.86" y="93.98"/>
+<instance part="C69" gate="&gt;NAME" x="27.94" y="88.9"/>
+<instance part="C70" gate="&gt;NAME" x="17.78" y="88.9" rot="MR0"/>
+<instance part="PE28" gate="M" x="22.86" y="76.2" smashed="yes"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="C70" gate="&gt;NAME" pin="2"/>
+<wire x1="17.78" y1="83.82" x2="17.78" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="C69" gate="&gt;NAME" pin="2"/>
+<wire x1="17.78" y1="81.28" x2="22.86" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="81.28" x2="27.94" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="81.28" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="PE28" gate="M" pin="PE"/>
+<wire x1="22.86" y1="81.28" x2="22.86" y2="78.74" width="0.1524" layer="91"/>
+<junction x="22.86" y="81.28"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="X3" gate="G$1" pin="P$1"/>
+<pinref part="U13" gate="G$1" pin="PH1/OSC_OUT"/>
+<wire x1="25.4" y1="93.98" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="C69" gate="&gt;NAME" pin="1"/>
+<wire x1="27.94" y1="93.98" x2="63.5" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="91.44" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+<junction x="27.94" y="93.98"/>
+</segment>
+</net>
+<net name="N$22" class="0">
+<segment>
+<pinref part="C70" gate="&gt;NAME" pin="1"/>
+<wire x1="17.78" y1="91.44" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="U13" gate="G$1" pin="PH0/OSC_IN"/>
+<wire x1="17.78" y1="93.98" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="96.52" x2="63.5" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="X3" gate="G$1" pin="P$2"/>
+<wire x1="20.32" y1="93.98" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+<junction x="17.78" y="93.98"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
