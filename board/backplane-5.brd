@@ -227,6 +227,7 @@ Created by Robert Siegler</description>
 <smd name="2@2" x="-2" y="2.325" dx="3" dy="3" layer="1"/>
 <smd name="3@2" x="2" y="2.325" dx="3" dy="3" layer="1"/>
 <smd name="4@2" x="6" y="2.325" dx="3" dy="3" layer="1"/>
+<text x="11.43" y="-1.27" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="TQFP-128">
 <smd name="P$1" x="-7.6" y="6.2" dx="1.6" dy="0.25" layer="1" rot="R180"/>
@@ -2163,15 +2164,15 @@ design rules under a new name.</description>
 </element>
 <element name="U9" library="tuetuopay" package="SOT223" value="AMS1117-5.0" x="18.89" y="6.45"/>
 <element name="RJ1" library="tuetuopay" package="RJ45MALE" value="RJ45PLUG" x="88" y="50" rot="R270"/>
-<element name="U$1" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="90" y="87" rot="R90"/>
+<element name="CN2" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="90" y="87" rot="R90"/>
 <element name="RJ2" library="tuetuopay" package="RJ45MALE" value="RJ45PLUG" x="68" y="50" rot="R270"/>
-<element name="U$2" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="70" y="87" rot="R90"/>
+<element name="CN3" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="70" y="87" rot="R90"/>
 <element name="RJ3" library="tuetuopay" package="RJ45MALE" value="RJ45PLUG" x="48" y="50" rot="R270"/>
-<element name="U$3" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="50" y="87" rot="R90"/>
+<element name="CN4" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="50" y="87" rot="R90"/>
 <element name="RJ4" library="tuetuopay" package="RJ45MALE" value="RJ45PLUG" x="28" y="50" rot="R270"/>
-<element name="U$4" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="30" y="87" rot="R90"/>
+<element name="CN5" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="30" y="87" rot="R90"/>
 <element name="RJ5" library="tuetuopay" package="RJ45MALE" value="RJ45PLUG" x="8" y="50" rot="R270"/>
-<element name="U$5" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="10" y="87" rot="R90"/>
+<element name="CN6" library="tuetuopay" package="4PINCONN-FEMALE-1.6" value="4PINCONNFEMALE-1.6" x="10" y="87" rot="R90"/>
 <element name="U11" library="tuetuopay" package="TQFP-128" value="KSZ9897" x="58.928" y="29.2608" rot="R270"/>
 <element name="C23" library="tuetuopay" package="0603" value="220uF" x="45.3644" y="31.9532" smashed="yes" rot="R180">
 <attribute name="NAME" x="45.9994" y="31.3182" size="0.762" layer="25" rot="R180"/>
@@ -2185,7 +2186,7 @@ design rules under a new name.</description>
 <element name="L2" library="tuetuopay" package="1210" value="220nH" x="-77.47" y="-123.19" smashed="yes">
 <attribute name="NAME" x="-79.375" y="-121.285" size="0.762" layer="25"/>
 </element>
-<element name="X1" library="tuetuopay" package="XTAL-2-SMD" value="25MHz" x="72.136" y="37.1856" smashed="yes" rot="R90">
+<element name="Y1" library="tuetuopay" package="XTAL-2-SMD" value="25MHz" x="72.136" y="37.1856" smashed="yes" rot="R90">
 <attribute name="NAME" x="70.236" y="34.4856" size="0.762" layer="21" font="vector" rot="R90"/>
 </element>
 <element name="C26" library="tuetuopay" package="0603" value="2pF" x="75.5904" y="35.3568" smashed="yes">
@@ -2318,7 +2319,7 @@ design rules under a new name.</description>
 <element name="C65" library="tuetuopay" package="0603" value="100nF" x="22.7584" y="28.8544" smashed="yes" rot="R180">
 <attribute name="NAME" x="20.955" y="29.0322" size="0.762" layer="25" rot="R180"/>
 </element>
-<element name="X2" library="tuetuopay" package="XTAL-2-SMD" value="25MHz" x="26.0096" y="19.1008" smashed="yes" rot="R180">
+<element name="Y2" library="tuetuopay" package="XTAL-2-SMD" value="25MHz" x="26.0096" y="19.1008" smashed="yes" rot="R180">
 <attribute name="NAME" x="28.7096" y="17.2008" size="0.762" layer="21" font="vector" rot="R180"/>
 </element>
 <element name="C66" library="tuetuopay" package="0603" value="22pF" x="27.6352" y="15.4432" smashed="yes" rot="R270">
@@ -2467,7 +2468,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="68.8594" y="24.9682" size="0.762" layer="25" rot="R90"/>
 </element>
 <element name="U13" library="tuetuopay" package="LQFP-100" value="STM32F217-100" x="-138.3792" y="-526.288"/>
-<element name="X3" library="tuetuopay" package="XTAL-2-SMD" value="25MHz" x="-150.7744" y="-531.368"/>
+<element name="Y3" library="tuetuopay" package="XTAL-2-SMD" value="25MHz" x="-150.7744" y="-531.368"/>
 <element name="C69" library="tuetuopay" package="0603" value="8pF" x="-151.1808" y="-538.0736"/>
 <element name="C70" library="tuetuopay" package="0603" value="8pF" x="-151.1808" y="-541.7312"/>
 </elements>
@@ -2542,16 +2543,16 @@ design rules under a new name.</description>
 <contactref element="C22" pad="2"/>
 <contactref element="C21" pad="2"/>
 <contactref element="C20" pad="2"/>
-<contactref element="U$1" pad="4@2"/>
-<contactref element="U$1" pad="4@1"/>
-<contactref element="U$2" pad="4@2"/>
-<contactref element="U$2" pad="4@1"/>
-<contactref element="U$3" pad="4@2"/>
-<contactref element="U$3" pad="4@1"/>
-<contactref element="U$4" pad="4@2"/>
-<contactref element="U$4" pad="4@1"/>
-<contactref element="U$5" pad="4@2"/>
-<contactref element="U$5" pad="4@1"/>
+<contactref element="CN2" pad="4@2"/>
+<contactref element="CN2" pad="4@1"/>
+<contactref element="CN3" pad="4@2"/>
+<contactref element="CN3" pad="4@1"/>
+<contactref element="CN4" pad="4@2"/>
+<contactref element="CN4" pad="4@1"/>
+<contactref element="CN5" pad="4@2"/>
+<contactref element="CN5" pad="4@1"/>
+<contactref element="CN6" pad="4@2"/>
+<contactref element="CN6" pad="4@1"/>
 <contactref element="U11" pad="P$138"/>
 <contactref element="U11" pad="P$150"/>
 <contactref element="U11" pad="P$153"/>
@@ -2794,8 +2795,8 @@ design rules under a new name.</description>
 <signal name="5V-5">
 <contactref element="U5" pad="2"/>
 <contactref element="C9" pad="P"/>
-<contactref element="U$5" pad="1@2"/>
-<contactref element="U$5" pad="1@1"/>
+<contactref element="CN6" pad="1@2"/>
+<contactref element="CN6" pad="1@1"/>
 <wire x1="7.675" y1="75.557871875" x2="7.675" y2="71.065259375" width="0.8128" layer="1"/>
 <wire x1="7.675" y1="75.557871875" x2="7.675" y2="81" width="0.8128" layer="1"/>
 <wire x1="6.096" y1="68.596" x2="6" y2="68.5" width="0.8128" layer="1"/>
@@ -2811,8 +2812,8 @@ design rules under a new name.</description>
 <signal name="5V-1">
 <contactref element="U1" pad="2"/>
 <contactref element="C2" pad="P"/>
-<contactref element="U$1" pad="1@2"/>
-<contactref element="U$1" pad="1@1"/>
+<contactref element="CN2" pad="1@2"/>
+<contactref element="CN2" pad="1@1"/>
 <wire x1="87.675" y1="75.76655" x2="87.675" y2="81" width="0.8128" layer="1"/>
 <wire x1="87.675" y1="75.76655" x2="87.675" y2="71" width="0.8128" layer="1"/>
 <wire x1="87.675" y1="71" x2="90.95" y2="71" width="0.8128" layer="1"/>
@@ -2826,8 +2827,8 @@ design rules under a new name.</description>
 <signal name="5V-2">
 <contactref element="U2" pad="2"/>
 <contactref element="C3" pad="P"/>
-<contactref element="U$2" pad="1@2"/>
-<contactref element="U$2" pad="1@1"/>
+<contactref element="CN3" pad="1@2"/>
+<contactref element="CN3" pad="1@1"/>
 <wire x1="67.675" y1="75.574596875" x2="67.675" y2="81" width="0.8128" layer="1"/>
 <wire x1="67.675" y1="75.574596875" x2="67.675" y2="71" width="0.8128" layer="1"/>
 <wire x1="67.675" y1="71" x2="70.95" y2="71" width="0.8128" layer="1"/>
@@ -2841,8 +2842,8 @@ design rules under a new name.</description>
 <signal name="5V-3">
 <contactref element="U3" pad="2"/>
 <contactref element="C5" pad="P"/>
-<contactref element="U$3" pad="1@2"/>
-<contactref element="U$3" pad="1@1"/>
+<contactref element="CN4" pad="1@2"/>
+<contactref element="CN4" pad="1@1"/>
 <wire x1="47.675" y1="75.71170625" x2="47.675" y2="81" width="0.8128" layer="1"/>
 <wire x1="47.675" y1="75.71170625" x2="47.675" y2="71" width="0.8128" layer="1"/>
 <wire x1="47.675" y1="71" x2="50.95" y2="71" width="0.8128" layer="1"/>
@@ -2856,8 +2857,8 @@ design rules under a new name.</description>
 <signal name="5V-4">
 <contactref element="U4" pad="2"/>
 <contactref element="C7" pad="P"/>
-<contactref element="U$4" pad="1@2"/>
-<contactref element="U$4" pad="1@1"/>
+<contactref element="CN5" pad="1@2"/>
+<contactref element="CN5" pad="1@1"/>
 <wire x1="27.675" y1="75.729246875" x2="27.675" y2="81" width="0.8128" layer="1"/>
 <wire x1="27.675" y1="75.729246875" x2="27.675" y2="71" width="0.8128" layer="1"/>
 <wire x1="27.675" y1="71" x2="30.95" y2="71" width="0.8128" layer="1"/>
@@ -3469,7 +3470,7 @@ design rules under a new name.</description>
 <wire x1="68.0624" y1="28.6608" x2="67.4624" y2="31.6992" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$5">
-<contactref element="X1" pad="P$2"/>
+<contactref element="Y1" pad="P$2"/>
 <contactref element="C25" pad="1"/>
 <contactref element="U11" pad="P$126"/>
 <wire x1="66.528" y1="34.6608" x2="67.7824" y2="34.6608" width="0.2032" layer="1"/>
@@ -3481,7 +3482,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$6">
 <contactref element="C26" pad="1"/>
-<contactref element="X1" pad="P$1"/>
+<contactref element="Y1" pad="P$1"/>
 <contactref element="U11" pad="P$125"/>
 <wire x1="66.528" y1="34.2608" x2="67.91073125" y2="34.2608" width="0.2032" layer="1"/>
 <wire x1="70.83553125" y1="37.1856" x2="71.7296" y2="37.1856" width="0.2032" layer="1"/>
@@ -3511,7 +3512,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$9">
 <contactref element="U12" pad="15"/>
-<contactref element="X2" pad="P$1"/>
+<contactref element="Y2" pad="P$1"/>
 <contactref element="C66" pad="1"/>
 <wire x1="27.6352" y1="16.2932" x2="27.6352" y2="18.8764" width="0.2032" layer="1"/>
 <wire x1="27.7474" y1="18.9886" x2="27.6352" y2="18.8764" width="0.1524" layer="1"/>
@@ -3528,7 +3529,7 @@ design rules under a new name.</description>
 <wire x1="29.9492" y1="21.8212" x2="29.2608" y2="21.1328" width="0.2032" layer="1"/>
 </signal>
 <signal name="N$10">
-<contactref element="X2" pad="P$2"/>
+<contactref element="Y2" pad="P$2"/>
 <contactref element="U12" pad="14"/>
 <contactref element="C67" pad="1"/>
 <wire x1="24.384" y1="16.2932" x2="24.384" y2="18.8764" width="0.2032" layer="1"/>
@@ -4064,7 +4065,7 @@ design rules under a new name.</description>
 <wire x1="82.42555" y1="27.051" x2="89.027" y2="27.051" width="0.2032" layer="16"/>
 </signal>
 <signal name="N$21">
-<contactref element="X3" pad="P$1"/>
+<contactref element="Y3" pad="P$1"/>
 <contactref element="U13" pad="13"/>
 <contactref element="C69" pad="1"/>
 <wire x1="-152.6244" y1="-531.368" x2="-152.0308" y2="-538.0736" width="0" layer="19" extent="1-1"/>
@@ -4073,7 +4074,7 @@ design rules under a new name.</description>
 <signal name="N$22">
 <contactref element="C70" pad="1"/>
 <contactref element="U13" pad="12"/>
-<contactref element="X3" pad="P$2"/>
+<contactref element="Y3" pad="P$2"/>
 <wire x1="-148.9244" y1="-531.368" x2="-152.0308" y2="-541.7312" width="0" layer="19" extent="1-1"/>
 <wire x1="-138.8792" y1="-534.038" x2="-148.9244" y2="-531.368" width="0" layer="19" extent="1-1"/>
 </signal>
