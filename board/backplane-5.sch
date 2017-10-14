@@ -1537,7 +1537,7 @@ Type: &lt;b&gt;SPC4077 / SPC 4078&lt;/b&gt;&lt;p&gt;</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="4PINCONN" prefix="JP">
+<deviceset name="4PINCONN" prefix="CN">
 <gates>
 <gate name="G$1" symbol="4PINCONN" x="-2.54" y="0"/>
 </gates>
@@ -13724,6 +13724,11 @@ MII</text>
 <pinref part="U13" gate="G$1" pin="PA1"/>
 <wire x1="63.5" y1="66.04" x2="60.96" y2="66.04" width="0.1524" layer="91"/>
 <label x="60.96" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U13" gate="G$1" pin="PA8"/>
+<wire x1="152.4" y1="104.14" x2="154.94" y2="104.14" width="0.1524" layer="91"/>
+<label x="154.94" y="104.14" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="STM32-ETH-CRSDV" class="0">
